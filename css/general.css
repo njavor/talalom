@@ -1,0 +1,80 @@
+:root{
+    --primary: #8f2dff;
+    --black: #111;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+
+    background: var(--black);
+    color: white;
+    background: white;
+    color: #111;
+
+    font-family: "Nunito Sans", sans-serif;
+}
+body{
+    display: grid;
+    grid-template-rows: fit-content(100%) 1fr fit-content(100%);
+}
+
+
+
+h1, h2, h3, h4, h5{
+    /* font-family: "DM Serif Text", serif; */
+    font-family: "Nunito Sans", sans-serif;
+    
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+section{
+    margin-inline: 10%;
+    padding-block: 2rem 10rem;
+    border-bottom: dashed 1px #444;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+header{
+    position: relative;
+    height: 150px;
+
+    background: var(--primary);
+
+
+    & h1{
+        position: absolute;
+        bottom: -27px;
+        left: 10%;
+
+        color: var(--black);
+        color: white;
+        font-family: "Plaster", system-ui;
+        letter-spacing: 0px;
+        font-size: 100px;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background: var(--primary);
+    color: white;
+    padding-block: 4em 2em;
+    text-align: center;
+    font-weight: bold;
+}
